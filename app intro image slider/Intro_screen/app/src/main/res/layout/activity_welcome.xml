@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutDots" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_above="@+id/buttonSum"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_above="@id/layoutDots"
+        android:background="@android:color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonSum"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#69D2E7"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#E04320"
+            android:text="SIGNUP"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
